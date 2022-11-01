@@ -22,7 +22,7 @@ export default function Hymn() {
     return (
       <>
         <div className='text-center'>Failed to load. Please try again!</div>
-        <Footer hymnno={songno} />
+        <Footer hymnno={350} />
       </>
     )
   if (!data)
