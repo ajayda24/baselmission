@@ -18,8 +18,20 @@ export default function Hymn() {
         <Footer hymnno={350} />
       </>
     )
-  if (error) return <div className='text-center'>Failed to load</div>
-  if (!data) return <div className='text-center'>Loading...</div>
+  if (error)
+    return (
+      <>
+        <div className='text-center'>Failed to load. Please try again!</div>
+        <Footer hymnno={songno} />
+      </>
+    )
+  if (!data)
+    return (
+      <>
+        <div className='text-center'>Loading...</div>
+        <Footer hymnno={songno} />
+      </>
+    )
 
   return (
     <>
